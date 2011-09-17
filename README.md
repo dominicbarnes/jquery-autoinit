@@ -18,12 +18,18 @@ for jQuery plugins, but not required by any means.
 Usage
 =====
 
+    <!-- To apply to a select group of elements -->
+    $(".auto").autoInit();
+
+    <!-- Or to apply to all elements on the page (ie: $("*")) -->
+    $.autoInit();
+
     <!-- $("#test-dialog").dialog({
             "autoOpen": false,
             "draggable": false,
             "position": "top"
         }); -->
-    <div id="test-dialog" class="auto" title="My Dialog">
+    <div id="test-dialog" class="auto" title="My Dialog" data-auto-dialog='{ "autoOpen": false, "draggable": false, "position": "top" }'>
         <h2>My Cool Dialog</h2>
         <p>Some cool content</p>
     </div>
@@ -42,9 +48,3 @@ Usage
         <h3><a href="#">Pane 4</a></h3>
         <div>Pane 4 Content ...</div>
     </div>
-
-    <!-- Or to apply to a select group of elements -->
-    $(".auto").autoInit();
-
-    <!-- Or to apply to all elements on the page (ie: $("*")) -->
-    $.autoInit();
